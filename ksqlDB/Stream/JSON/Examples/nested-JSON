@@ -1,1 +1,20 @@
-
+CREATE STREAM TRANSAKSI_EMAS_v01 (
+  message STRUCT<
+    data STRUCT<
+      ID BIGINT,
+      ID_DETAIL BIGINT,
+      AMOUNT DOUBLE,
+      BERAT INT,
+      BIAYA DOUBLE,
+      JUMLAH INT
+    >,
+    headers STRUCT<
+      operation VARCHAR
+    >
+  >
+) 
+WITH (
+  KAFKA_TOPIC='JSON.TRANSAKSI_EMAS',
+  VALUE_FORMAT='JSON',
+  PARTITIONS=10
+);
