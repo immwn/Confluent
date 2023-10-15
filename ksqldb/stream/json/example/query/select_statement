@@ -1,0 +1,11 @@
+SELECT
+    message->data->ID AS ID,
+    message->data->ID_DETAIL AS ID_DETAIL,
+    message->data->AMOUNT AS AMOUNT,
+    message->data->BERAT AS BERAT,
+    message->data->BIAYA AS BIAYA,
+    message->data->JUMLAH AS JUMLAH
+	message->headers->OPERATION AS operation
+FROM
+    TRANSAKSI_EMAS_01
+EMIT CHANGES;
