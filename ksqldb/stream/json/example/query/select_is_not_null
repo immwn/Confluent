@@ -1,0 +1,11 @@
+SELECT
+    ROWTIME AS MESSAGE_TIMESTAMP,
+    ROWPARTITION AS PARTITION,
+    ROWOFFSET AS OFFSET,
+    message->data->ID AS ID,
+    message->headers->operation AS OPERATION
+FROM
+    TRANSAKSI_EMAS_01
+WHERE
+    message->data->ID IS NOT NULL and message->headers->operation='UPDATE'
+EMIT CHANGES;
