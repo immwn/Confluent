@@ -10,5 +10,5 @@ SELECT
     message->data->JUMLAH AS JUMLAH,
     message->headers->operation AS OPERATION
 FROM
-    KVN_TBL_E_TRANSAKSI_EMAS_DET_01
+    TRANSAKSI_EMAS_01
 EMIT CHANGES;
