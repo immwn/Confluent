@@ -1,0 +1,25 @@
+{
+  "data": {
+    "ID": {
+      "int": 64221
+    },
+    "NAME": {
+      "string": "Catherine Turner"
+    },
+    "PHONE": {
+      "string": "001-677-138-4422x41120"
+    },
+    "EMAIL": {
+      "string": "oliviahenderson@example.com"
+    },
+    "ADDRESS": {
+      "string": "66839 Jennifer Dam Apt. 886\nNew Thomasburgh, TN 26645"
+    },
+    "COUNTRY": {
+      "string": "Papua New Guinea"
+    }
+  },
+  "headers": {
+    "operation": "REFRESH",
+  }
+}
